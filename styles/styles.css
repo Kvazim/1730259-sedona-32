@@ -9,8 +9,8 @@
   height: 485px;
   background-color: grey;
   background-image:
-    url("/images/vector.svg"),
-    url("/images/index-background.jpg");
+    url("../images/vector.svg"),
+    url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -22,7 +22,7 @@
 .subscription__form {
   height: 411px;
   background-color: grey;
-  background-image: url("/images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
 }
 
@@ -34,6 +34,6 @@
 .inner__header {
   height: 408px;
   background-color: grey;
-  background-image: url("/images/catalog-background.jpg");
+  background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
 }
