@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="">
 </head>
 
@@ -14,32 +14,32 @@
     <!---navigation---->
     <nav class="main__nav">
       <ul class="nav__left">
-        <li>
-          <a href="#">Главная</a>
+        <li class="nav__left-item">
+          <a class="nav__left-link navigation-link-active" href="#">Главная</a>
         </li>
-        <li>
-          <a href="#">О Седоне</a>
+        <li class="nav__left-item">
+          <a class="nav__left-link" href="#">О Седоне</a>
         </li>
-        <li>
-          <a href="catalog.html">Гостиницы</a>
+        <li class="nav__left-item">
+          <a class="nav__left-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <div class="nav__logo">
-        <a><img src="img/sedona.svg" alt="logo" width="138" height="70"></a>
+        <a class="nav__logo-link"><img src="img/sedona.svg" alt="logo" width="138" height="70"></a>
       </div>
       <ul class="nav__right">
-        <li>
-          <a href="#">
+        <li class="nav__right-item">
+          <a class="nav__right-link" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li>
-          <a href="#">
+        <li class="nav__right-item">
+          <a class="nav__right-link" href="#">
             <span class="visually-hidden">Избранное</span>
           </a>
         </li>
-        <li>
-          <a class="btn" href="#">Хочу сюда!</a>
+        <li class="nav__right-item">
+          <a class="nav__right-link btn" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -140,9 +140,11 @@
     <section class="subscription__form">
       <h2 class="subscription__title">Подпишитесь на рассылку</h2>
       <p class="subscription__subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form action="mailing__form">
-        <label for="e-mail" class="visually-hidden">Укажите Ваш e-mail адресс</label>
-        <input type="email" class="e-mail" placeholder="Ваш e-mail">
+      <form class="mailing__form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="e-mail">
+          <label for="e-mail" class="visually-hidden">Укажите Ваш e-mail адресс</label>
+          <input type="email" class="e-mail" name="e-mail" id="e-mail" placeholder="Ваш e-mail">
+        </p>
         <button class="button" type="submit">Подписаться</button>
       </form>
     </section>
