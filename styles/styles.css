@@ -8,8 +8,8 @@
 .promo__banner {
   height: 485px;
   background-color: grey;
-  background-image: url("/img/vector.svg"),
-  url("/img/index-background.jpg");
+  background-image: url("img/vector.svg"),
+  url("img/index-background.jpg");
   background-repeat: no-repeat;
   background-position-y: bottom;
 }
@@ -21,7 +21,7 @@
 .subscription__form {
   height: 411px;
   background-color: grey;
-  background-image: url("/img/background.jpg");
+  background-image: url("img/background.jpg");
   background-repeat: no-repeat;
 }
 
@@ -33,6 +33,6 @@
 .inner__header {
   height: 408px;
   background-color: grey;
-  background-image: url("/img/catalog-background.jpg");
+  background-image: url("img/catalog-background.jpg");
   background-repeat: no-repeat;
 }
