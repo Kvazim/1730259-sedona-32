@@ -8,10 +8,11 @@
 .promo__banner {
   height: 485px;
   background-color: grey;
-  background-image: url("/img/vector.svg"),
-  url("/img/index-background.jpg");
+  background-image:
+    url("/img/vector.svg"),
+    url("/img/index-background.jpg");
   background-repeat: no-repeat;
-  background-position-y: bottom;
+  background-position: bottom;
 }
 
 .advantage {
