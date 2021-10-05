@@ -1,15 +1,15 @@
-/**,
+*,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-}*/
+}
 
 .promo__banner {
   height: 485px;
   background-color: grey;
   background:
-    url("../images/vector.svg") bottom,
+    url("../images/promo-index.svg") bottom,
     url("../images/index-background.jpg");
     background-repeat: no-repeat;
 }
