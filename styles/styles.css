@@ -1,3 +1,57 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: black;
+  background-color: white;
+}
+/*-----index-----*/
+/*-----navigation-----*/
+.nav__right-link {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav__left, .nav__right {
+  list-style: none;
+  text-transform: uppercase;
+}
+.nav__left li a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navigation-link-active {
+  padding-bottom: 21px;
+  border-bottom: 2px solid #756257;
+}
+.btn {
+  font-family: inherit;
+  font-size: 16px;
+  color: white;
+  background-color: #756257;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/*-----navigation-----*/
+/*-----promo-----*/
 .promo__banner {
   height: 485px;
   background-color: grey;
@@ -5,26 +59,103 @@
     url("../images/promo-decor.svg") no-repeat bottom,
     url("../images/index-background.jpg") no-repeat;
 }
-
+.promo__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.promo__subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+}
+/*-----promo-----*/
+/*-----advantage-----*/
 .advantage {
   background-color: #83B3D3;
 }
-
+h3 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.advantage li {
+  list-style: none;
+}
+.card__text {
+  text-align: center;
+}
+.card__text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+/*-----search__block-----*/
+.search__block {
+  text-align: center;
+}
+.search__block p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+.search__block strong {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+/*-----search__block-----*/
+/*-----subscription__form-----*/
 .subscription__form {
   height: 411px;
   background-color: grey;
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
+  color: white;
+  text-align: center;
 }
-
-.navigation-link-active {
-  padding-bottom: 21px;
-  border-bottom: 2px solid #756257;
+.subscription__title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
-
+.subscription__subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background-color: #83B3D3;
+}
+/*-----subscription__form-----*/
+/*-----footer__social-----*/
+.footer__social-list {
+  text-decoration: none;
+  list-style: none;
+}
+.footer__tel {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: black;
+}
+/*-----footer__social-----*/
+/*-----index-----*/
+/*-----catalog-----*/
 .inner__header {
   height: 408px;
   background-color: grey;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
+
 }
+/*-----catalog-----*/
