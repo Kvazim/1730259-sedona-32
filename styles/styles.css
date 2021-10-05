@@ -62,7 +62,6 @@ ul li {
 /*-----navigation-----*/
 /*-----promo-----*/
 .promo__banner {
-  height: 485px;
   background-color: grey;
   background:
     url("../images/promo-decor.svg") no-repeat bottom,
