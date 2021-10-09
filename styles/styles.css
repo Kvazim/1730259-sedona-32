@@ -13,9 +13,22 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
 
 body {
-  font-family: "PT Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 25px;
   color: black;
@@ -23,12 +36,29 @@ body {
 }
 /*-----index-----*/
 /*-----navigation-----*/
+.page_header {
+  background-color: white;
+}
+
+.main__nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav__logo-link img {
+  width: 138px;
+  height: 70px;
+}
+
 ul li {
   list-style: none;
 }
 
 .nav__right-link {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   text-decoration: none;
 }
@@ -60,19 +90,38 @@ ul li {
   text-decoration: none;
 }
 /*----navigation----*/
+.main-index {
+  flex-grow: 1;
+}
 /*-----promo-----*/
+.promo {
+  text-align:center;
+}
+.promo__text {
+  width: 720px;
+  min-height: 282px;
+  margin: 0 auto;
+}
+.promo-logo {
+  display: block;
+  width: 458px;
+  height: 352px;
+  margin: 0 auto;
+}
 .promo__banner {
+  height: 485px;
   background-color: grey;
   background:
     url("../images/promo-decor.svg") no-repeat bottom,
     url("../images/index-background.jpg") no-repeat;
-    background-size: 100% auto;
+  background-size: 100% auto;
 }
 
 .promo__title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .promo__subtitle {
@@ -83,10 +132,21 @@ ul li {
 }
 /*-----promo-----*/
 /*-----advantage-----*/
-.advantage {
+
+.blu {
   background-color: #83B3D3;
 }
 
+.light-blu {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.blu-white {
+  background-color: rgba(255, 255, 255, 1);
+  ;
+}
+.dark-blu {
+  background-color: rgba(131, 179, 211, 0.2);
+}
 .advantage__item-promo {
   color: white;
 }
@@ -104,6 +164,8 @@ h3 {
 }
 
 .card__text {
+  width: 400px;
+  min-height: 384px;
   text-align: center;
 }
 
@@ -113,9 +175,27 @@ h3 {
   line-height: 21px;
   color: #333333;
 }
+.card__image {
+  width: 800px;
+  height: 384px;
+}
 
+.advantage__list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage__item-promo {
+  display: flex;
+  flex-wrap: wrap;
+}
 /*-----search__block-----*/
 .search__block {
+  width: 720px;
+  min-height: 417px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -138,7 +218,7 @@ h3 {
 /*-----search__block-----*/
 /*-----subscription__form-----*/
 .subscription__form {
-  height: 411px;
+  min-height: 411px;
   background-color: grey;
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
@@ -148,15 +228,24 @@ h3 {
 }
 
 .subscription__title {
+  width: 720px;
+  margin: 0 auto;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
 .subscription__subtitle {
+  width: 720px;
+  margin: 0 auto;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+}
+.mailing__form {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
 }
 
 .button {
@@ -171,6 +260,14 @@ h3 {
 }
 /*-----subscription__form-----*/
 /*-----footer__social-----*/
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 72px;
+
+}
 .footer__social-list {
   text-decoration: none;
 }
@@ -182,7 +279,7 @@ h3 {
   color: black;
 }
 /*-----footer__social-----*/
-/*-----index-----*/
+/*---------------index--------------------*/
 
 /*-----catalog-----*/
 .inner__header {
