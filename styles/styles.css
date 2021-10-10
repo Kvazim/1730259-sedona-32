@@ -95,6 +95,8 @@ ul li {
 }
 /*-----promo-----*/
 .promo {
+  width: 1200px;
+  margin: 0 auto;
   text-align:center;
 }
 .promo__text {
@@ -187,6 +189,10 @@ h3 {
   flex-wrap: wrap;
 }
 
+.advantage__list:last-child .advantage__item-promo {
+  flex-direction: row-reverse;
+}
+
 .advantage__item-promo {
   display: flex;
   flex-wrap: wrap;
@@ -217,7 +223,14 @@ h3 {
 
 /*-----search__block-----*/
 /*-----subscription__form-----*/
+
+.subscription__form-inner {
+  min-height: 411px;
+}
+
 .subscription__form {
+  width: 1200px;
+  margin: 0 auto;
   min-height: 411px;
   background-color: grey;
   background-image: url("../images/background.jpg");
@@ -242,11 +255,13 @@ h3 {
   font-size: 22px;
   line-height: 26px;
 }
+
 .mailing__form {
   display: flex;
   width: 800px;
   margin: 0 auto;
-}
+  justify-content: center;
+  }
 
 .button {
   font-family: inherit;
@@ -282,7 +297,18 @@ h3 {
 /*---------------index--------------------*/
 
 /*-----catalog-----*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+.main__inner {
+  flex-grow: 1;
+}
+/*-------шапка------*/
 .inner__header {
+  min-height: 408px;
   background-color: grey;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
@@ -296,10 +322,31 @@ h3 {
   line-height: 78px;
 }
 
+.breadcrumbs {
+  display: flex;
+}
+
 .breadcrumbs-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.infrastructure {
+  margin-right: 67px;
+}
+
+.catalog__filter-list {
+  min-width: 150px;
+}
+
+.search__price {
+  width: 290px;
+  margin-left: 190px;
 }
 
 .catalog__filter-title {
@@ -319,6 +366,10 @@ h3 {
   font-size: 20px;
   line-height: 26px;
 }
+/*-------кнопки--------*/
+.catalog-button {
+  margin-left: auto;
+}
 
 .button-catalog {
   font-family: inherit;
@@ -333,8 +384,16 @@ h3 {
 
 .button-reset {
   background-color: transparent;
+  border: none;
+  text-transform: none;
 }
-
+/*-------кнопки--------*/
+/*-------шапка------*/
+.search-header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 135px;
+}
 p strong {
   font-weight: 700;
   font-size: 30px;
@@ -345,6 +404,12 @@ p strong {
   font-size: 18px;
   line-height: 24px;
   color: #333333;
+}
+/*-------шапка------*/
+/*-------список------*/
+.product__card {
+  display: flex;
+  justify-content: space-between;
 }
 
 .product__card-title{
@@ -367,6 +432,7 @@ p strong {
   line-height: 21px;
   color: #333333;
 }
+/*-------список------*/
 .pagination-item a {
   text-decoration: none;
 }
