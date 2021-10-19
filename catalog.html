@@ -9,9 +9,9 @@
 </head>
 
 <body>
-  <!---page_header--->
-  <header class="page_header">
-    <div class="container">
+  <div class="container">
+    <!---page_header--->
+    <header class="page_header">
       <!---navigation---->
       <nav class="main__nav">
         <ul class="nav__left">
@@ -45,11 +45,9 @@
           </li>
         </ul>
       </nav>
-    </div>
-    <!---navigation---->
-  </header>
-  <main class="main__inner">
-    <div class="container">
+      <!---navigation---->
+    </header>
+    <main class="main__inner">
       <header class="inner__header">
         <section class="inner__header-nav">
           <div class="inner-container">
@@ -150,11 +148,9 @@
           </div>
           <!---цена слайдер кнопки--->
         </section>
-    </div>
-    </header>
-    <!---шапка--->
-    <!---поиск результат--->
-    <div class="container">
+      </header>
+      <!---шапка--->
+      <!---поиск результат--->
       <section class="search__resultat">
         <div class="inner-container">
           <div class="search-header">
@@ -187,122 +183,146 @@
                 <a class="product__card-link" href="">
                   <img src="images/hotel-1.jpg" alt="футуристическая гостиница на склоне горы" width="180" height="120">
                 </a>
-                <a class="product__card-link" href="">
-                  <h3 class="product__card-title">Amara Resort & Spa</h3>
-                </a>
-                <p class="product__card-tipe">Гостиница</p>
-                <b class="product__card-price">От 4000 ₽</b>
-                <a class="btn btn-details" href="">подробнее</a>
-                <button class="button button-catalog button-favorites">В избранное</button>
-                <ul class="stars">
-                  <li>
-                    <p class="1-stars disable">1 звезда</p>
-                  </li>
-                  <li>
-                    <p class="2-stars disable">2 звезды</p>
-                  </li>
-                  <li>
-                    <p class="3-stars disable">3 звезды</p>
-                  </li>
-                  <li>
-                    <p class="4-stars activ">4 звезды</p>
-                  </li>
-                  <li>
-                    <p class="5-stars disable">5 звезд</p>
-                  </li>
-                </ul>
-                <p class="rating">Рейтинг: <span>8,5</span></p>
+                <div class="product__card-description">
+                  <a class="product__card-link" href="">
+                    <h3 class="product__card-title">Amara Resort & Spa</h3>
+                  </a>
+                  <div class="product__card-wrapper">
+                    <p class="product__card-tipe">Гостиница</p>
+                    <b class="product__card-price">От 4000 ₽</b>
+                  </div>
+                  <a class="btn btn-details" href="">подробнее</a>
+                  <button class="button button-favorites">В избранное</button>
+                </div>
+                <div class="rating-description">
+                  <ul class="stars">
+                    <li>
+                      <p class="stars-1 disable">1 звезда</p>
+                    </li>
+                    <li>
+                      <p class="stars-2 disable">2 звезды</p>
+                    </li>
+                    <li>
+                      <p class="stars-3 disable">3 звезды</p>
+                    </li>
+                    <li>
+                      <p class="stars-4 activ">4 звезды</p>
+                    </li>
+                    <li>
+                      <p class="stars-5 disable">5 звезд</p>
+                    </li>
+                  </ul>
+                  <p class="rating">Рейтинг: <span>8,5</span></p>
+                </div>
               </li>
               <li class="product__card">
                 <a class="product__card-link" href="">
                   <img src="images/hotel-2.jpg" alt="однаэтажная гостиница с видом на две горы" width="180"
                     height="120">
                 </a>
-                <a class="product__card-link" href="">
-                  <h3 class="product__card-title">Desert Quail Inn</h3>
-                </a>
-                <p class="product__card-tipe">Мотель</p>
-                <b class="product__card-price">От 3000 ₽</b>
-                <a class="btn btn-details" href="">подробнее</a>
-                <button class="button button-catalog button-favorites">В избранное</button>
-                <ul class="stars">
-                  <li>
-                    <p class="1-stars disable">1 звезда</p>
-                  </li>
-                  <li>
-                    <p class="2-stars disable">2 звезды</p>
-                  </li>
-                  <li>
-                    <p class="3-stars activ">3 звезды</p>
-                  </li>
-                  <li>
-                    <p class="4-stars disable">4 звезды</p>
-                  </li>
-                  <li>
-                    <p class="5-stars disable">5 звезд</p>
-                  </li>
-                </ul>
-                <p class="rating">Рейтинг: <span>8,9</span></p>
+                <div class="product__card-description">
+                  <a class="product__card-link" href="">
+                    <h3 class="product__card-title">Desert Quail Inn</h3>
+                  </a>
+                  <div class="product__card-wrapper">
+                    <p class="product__card-tipe">Мотель</p>
+                    <b class="product__card-price">От 3000 ₽</b>
+                  </div>
+                  <a class="btn btn-details" href="">подробнее</a>
+                  <button class="button button-catalog button-favorites">В избранное</button>
+                </div>
+                <div class="rating-description">
+                  <ul class="stars">
+                    <li>
+                      <p class="stars-1 disable">1 звезда</p>
+                    </li>
+                    <li>
+                      <p class="stars-2 disable">2 звезды</p>
+                    </li>
+                    <li>
+                      <p class="stars-3 activ">3 звезды</p>
+                    </li>
+                    <li>
+                      <p class="stars-4 disable">4 звезды</p>
+                    </li>
+                    <li>
+                      <p class="stars-5 disable">5 звезд</p>
+                    </li>
+                  </ul>
+                  <p class="rating">Рейтинг: <span>8,9</span></p>
+                </div>
               </li>
               <li class="product__card">
                 <a class="product__card-link" href="">
                   <img src="images/hotel-3.jpg" alt="Гора дьявола" width="180" height="120">
                 </a>
-                <a class="product__card-link" href="">
-                  <h3 class="product__card-title">Villas at Poco Diablo</h3>
-                </a>
-                <p class="product__card-tipe">Апартаменты</p>
-                <b class="product__card-price">От 2000 ₽</b>
-                <a class="btn btn-details" href="">подробнее</a>
-                <button class="button button-catalog button-favorites-added">В избранном</button>
-                <ul class="stars">
-                  <li>
-                    <p class="1-stars disable">1 звезда</p>
-                  </li>
-                  <li>
-                    <p class="2-stars activ">2 звезды</p>
-                  </li>
-                  <li>
-                    <p class="3-stars disable">3 звезды</p>
-                  </li>
-                  <li>
-                    <p class="4-stars disable">4 звезды</p>
-                  </li>
-                  <li>
-                    <p class="5-stars disable">5 звезд</p>
-                  </li>
-                </ul>
-                <p class="rating">Рейтинг: <span>9,2</span></p>
+                <div class="product__card-description">
+                  <a class="product__card-link" href="">
+                    <h3 class="product__card-title">Villas at Poco Diablo</h3>
+                  </a>
+                  <div class="product__card-wrapper">
+                    <p class="product__card-tipe">Апартаменты</p>
+                    <b class="product__card-price">От 2000 ₽</b>
+                  </div>
+                  <a class="btn btn-details" href="">подробнее</a>
+                  <button class="button button-catalog button-favorites-added">В избранном</button>
+                </div>
+                <div class="rating-description">
+                  <ul class="stars">
+                    <li>
+                      <p class="stars-1 disable">1 звезда</p>
+                    </li>
+                    <li>
+                      <p class="stars-2 activ">2 звезды</p>
+                    </li>
+                    <li>
+                      <p class="stars-3 disable">3 звезды</p>
+                    </li>
+                    <li>
+                      <p class="stars-4 disable">4 звезды</p>
+                    </li>
+                    <li>
+                      <p class="stars-5 disable">5 звезд</p>
+                    </li>
+                  </ul>
+                  <p class="rating">Рейтинг: <span>9,2</span></p>
+                </div>
               </li>
               <li class="product__card">
                 <a class="product__card-link" href="">
                   <img src="images/hotel-4.jpg" alt="Дорога среди леса в горах" width="180" height="120">
                 </a>
-                <a class="product__card-link" href="">
-                  <h3 class="product__card-title">GreenTree Inn</h3>
-                </a>
-                <p class="product__card-tipe">Гостиница</p>
-                <b class="product__card-price">От 3000 ₽</b>
-                <a class="btn btn-details" href="">подробнее</a>
-                <button class="button button-catalog button-favorites">В избранное</button>
-                <ul class="stars">
-                  <li>
-                    <p class="1-stars disable">1 звезда</p>
-                  </li>
-                  <li>
-                    <p class="2-stars activ">2 звезды</p>
-                  </li>
-                  <li>
-                    <p class="3-stars disable">3 звезды</p>
-                  </li>
-                  <li>
-                    <p class="4-stars disable">4 звезды</p>
-                  </li>
-                  <li>
-                    <p class="5-stars disable">5 звезд</p>
-                  </li>
-                </ul>
-                <p class="rating">Рейтинг: <span>9,2</span></p>
+                <div class="product__card-description">
+                  <a class="product__card-link" href="">
+                    <h3 class="product__card-title">GreenTree Inn</h3>
+                  </a>
+                  <div class="product__card-wrapper">
+                    <p class="product__card-tipe">Гостиница</p>
+                    <b class="product__card-price">От 3000 ₽</b>
+                  </div>
+                  <a class="btn btn-details" href="">подробнее</a>
+                  <button class="button button-catalog button-favorites">В избранное</button>
+                </div>
+                <div class="rating-description">
+                  <ul class="stars">
+                    <li>
+                      <p class="stars-1 disable">1 звезда</p>
+                    </li>
+                    <li>
+                      <p class="stars-2 activ">2 звезды</p>
+                    </li>
+                    <li>
+                      <p class="stars-3 disable">3 звезды</p>
+                    </li>
+                    <li>
+                      <p class="stars-4 disable">4 звезды</p>
+                    </li>
+                    <li>
+                      <p class="stars-5 disable">5 звезд</p>
+                    </li>
+                  </ul>
+                  <p class="rating">Рейтинг: <span>9,2</span></p>
+                </div>
               </li>
             </ul>
           </div>
@@ -342,15 +362,13 @@
               <button class="visually-hidden" type="submit">Отсортировать продукты</button>
             </form>
           </div>
+        </div>
       </section>
-    </div>
-    <!---навигация ссылки--->
-    </div>
-    <!---поиск результат--->
-  </main>
-  <!---------------.subscription__form--------------->
-  <footer>
-    <div class="container">
+      <!---навигация ссылки--->
+      <!---поиск результат--->
+    </main>
+    <!---------------.subscription__form--------------->
+    <footer>
       <section class="subscription__form-inner">
         <h2 class="subscription__title">Подпишитесь на рассылку</h2>
         <p class="subscription__subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -365,19 +383,20 @@
       <!-------------.subscription__form------------>
       <!------------.footer__social----------------->
       <section class="footer__social">
+        <h2 class="visually-hidden">Контактная информация</h2>
         <ul class="footer__social-list">
           <li>
-            <a class="btn" href="https://twitter.com/htmlacademy.ru">
+            <a class="twitter" href="https://twitter.com/htmlacademy.ru">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
           <li>
-            <a class="btn" href="https://www.facebook.com/htmlacademy">
+            <a class="facebook" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li>
-            <a class="btn" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <a class="youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually-hidden">youtube</span>
             </a>
           </li>
@@ -387,8 +406,8 @@
           <img src="images/logo_htmlacademy.svg" alt="logo" width="115" height="34">
         </a>
       </section>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>

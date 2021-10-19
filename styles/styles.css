@@ -131,6 +131,7 @@ ol li {
 }
 
 .btn {
+  padding: 10px 30px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -328,6 +329,14 @@ h3 {
   line-height: 36px;
 }
 
+.search__block .btn {
+  padding: 13px 148px 17px 148px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
 /*-----search__block-----*/
 /*-----subscription__form-----*/
 
@@ -356,7 +365,7 @@ h3 {
 }
 
 .subscription__subtitle {
-  width: 720px;
+  width: 540px;
   margin: 0 auto;
   padding-bottom: 25px;
   font-weight: 400;
@@ -373,7 +382,35 @@ h3 {
   justify-content: center;
 }
 
+.mailing__form p {
+  margin: 0;
+  padding: 0;
+}
+
+.e-mail {
+  width: 560px;
+  height: 60px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  margin: 0;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.mailing__form button {
+  width: 200px;
+  height: 60px;
+  border-radius: 0 10px 10px 0;
+}
+
 .button {
+  width: 160px;
+  padding-top: 9px;
+  padding-bottom: 10px;
   border: none;
   border-radius: 4px;
   font-family: inherit;
@@ -392,7 +429,7 @@ h3 {
 .footer__social {
   display: flex;
   justify-content: space-between;
-  margin: 40px 72px 30px;
+  margin: 40px 72px 40px;
 }
 .footer__social-list {
   display: flex;
@@ -432,6 +469,7 @@ h3 {
 }
 
 .main__inner {
+  margin: 0;
   flex-grow: 1;
 }
 /*-------шапка------*/
@@ -445,6 +483,9 @@ h3 {
 }
 
 .inner__header-title {
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 5px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -452,6 +493,8 @@ h3 {
 
 .breadcrumbs {
   display: flex;
+  margin: 0;
+  margin-bottom: 45px;
 }
 
 .breadcrumbs-item {
@@ -510,8 +553,9 @@ h3 {
   width: 110px;
 }
 
-.button-catalog {
+.catalog-button .button-catalog {
   margin-bottom: 20px;
+  height: 48px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -528,14 +572,32 @@ h3 {
   padding-top: 60px;
 }
 
-.button-reset {
+.catalog-button .button-reset {
   background-color: transparent;
   border: none;
   text-transform: none;
 }
 
+.button-favorites{
+  margin: 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
 .button-favorites-added {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
   background-color: #7DB54F;
+}
+
+.btn-details {
+  margin-right: 8px;
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
 
 .show-more {
@@ -547,6 +609,7 @@ h3 {
 .search-header {
   display: flex;
   margin-top: 44px;
+  margin-bottom: 42px;
 }
 
 .search__title-header {
@@ -562,6 +625,7 @@ h3 {
 }
 
 p strong {
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
@@ -584,6 +648,7 @@ p strong {
   height: 48px;
   margin-right: 8px;
   margin-bottom: 8px;
+  padding: 0;
   border-radius: 4px;
   background-color: white;
   color: black;
@@ -594,12 +659,50 @@ p strong {
 
 /*-------поиск заголовок-навигация------*/
 /*-------список------*/
+
+.product__card {
+  display: grid;
+  grid-template-columns: 180px 635px 160px;
+  gap: 37px;
+  padding: 30px 0;
+  border-top: 1px solid #E6E6E6;
+}
+
+.product__card:last-child {
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.product__card-link img{
+  grid-column: 1;
+}
+
+.product__card-description {
+  grid-column: 2/3;
+}
+
+.rating-description {
+  grid-column: 3/4;
+}
+
+.product__card-wrapper {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.product__list {
+  margin: 0;
+  padding: 0;
+}
+
 .product__card-link {
   text-decoration: none;
   color: inherit;
 }
 
 .product__card-title{
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
@@ -607,6 +710,7 @@ p strong {
 
 .product__card-tipe,
 .product__card-price {
+  margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -614,6 +718,13 @@ p strong {
 }
 
 .rating {
+  width: 160px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -638,6 +749,7 @@ p strong {
 .pagination {
   display: flex;
   margin: 0;
+  padding: 0;
 }
 
 .pagination-item:not(:last-child) {
