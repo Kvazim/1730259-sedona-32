@@ -354,6 +354,7 @@ h3 {
   color: #333333;
 }
 .card__image {
+  display: block;
   width: 800px;
   height: 384px;
 }
@@ -705,7 +706,9 @@ h3 {
 }
 
 .btn-details {
-  margin-right: 8px;
+  grid-column: 1;
+  grid-row: 4;
+  justify-self: start;
   padding-top: 9px;
   padding-bottom: 10px;
 }
@@ -800,12 +803,15 @@ p strong {
 
 .product__card-link--img {
   grid-column: 1;
+  width: 180px;
+  height: 120px;
+  object-fit: contain;
 }
 
 .product__card-description {
   display: grid;
   grid-template-columns: 160px 160px auto;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: min-content min-content auto 37px;
   grid-column: 2/3;
 }
 
@@ -824,14 +830,10 @@ p strong {
   grid-row: 2;
 }
 
-.btn-details {
-  grid-column: 1;
-  grid-row: 4;
-}
-
 .button-catalog {
   grid-column: 2;
   grid-row: 4;
+  justify-self: start;
 }
 
 .rating-description {
