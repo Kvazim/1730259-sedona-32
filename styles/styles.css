@@ -83,17 +83,17 @@ ol li {
 
 .nav__right {
   justify-content: flex-end;
+  text-transform: uppercase;
 }
 
 .nav__left-item:not(:first-child) {
   margin-left: 33px;
 }
 
-.nav__right-item:not(:last-child(-n+2)) {
+.nav__right-item:nth-child(-n+2) {
   width: 18px;
   height: 18px;
-  padding: 20px;
-  margin-right: 23px;
+  padding: 10px;
 }
 
 .nav__right-item:last-child {
@@ -116,13 +116,58 @@ ol li {
   color: inherit;
 }
 
+.icon-search {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  background: url("../images/interface.svg") no-repeat;
+  background-position: -98px -10px;
+}
+
+.icon-favorites {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  position: relative;
+  background: url("../images/interface.svg") no-repeat;
+  background-position: -125px -10px;
+}
+
+.icon::before {
+  content: "";
+  position: relative;
+  width: 19px;
+  height: 19px;
+  padding: 1px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  color: white;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.icon::after {
+  content: "12";
+  position: absolute;
+  display: block;
+  width: 19px;
+  height: 19px;
+  color: white;
+  top: 16px;
+  left: 931px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  z-index: 2;
+}
+
 .nav__left,
 .nav__right {
   width: 460px;
   margin: 0;
   padding: 0;
   align-items: center;
-  text-transform: uppercase;
 }
 
 .navigation-link-active {
@@ -257,18 +302,47 @@ h3 {
 }
 
 .card__text h3 {
+  position: relative;
   width: 180px;
   margin: 0 auto;
+}
+
+.house::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  position: absolute;
+  background: url("../images/hous.svg") no-repeat;
+  top: -90px;
+  left: 55px;
+}
+
+.food::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  position: absolute;
+  background: url("../images/buter.svg") no-repeat;
+  top: -90px;
+  left: 55px;
+}
+
+.souvenir::before {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 76px;
+  position: absolute;
+  background: url("../images/present.svg") no-repeat;
+  top: -90px;
+  left: 55px;
 }
 
 .lodging {
   padding-left: 40px;
   padding-right: 40px;
-}
-
-.food {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .card__text p {
@@ -387,13 +461,13 @@ h3 {
   padding: 0;
 }
 
-.e-mail {
+.mailing__form input {
   width: 560px;
-  height: 60px;
+  height: 58px;
   border-radius: 10px 0 0 10px;
   border: none;
   margin: 0;
-  padding: 0 20px;
+  padding-left: 20px;
   background-color: #f2f2f2;
   font-family: inherit;
   font-weight: 400;
@@ -441,11 +515,29 @@ h3 {
 .footer__social-item {
   width: 20px;
   height: 20px;
-  margin-right: 30px;
+  margin-right: 10px;
+  padding: 10px;
 }
 
 .footer__social-item:last-child {
   margin-right: 0;
+}
+
+.footer__social-link {
+  padding: 10px;
+  background: url("../images/social.svg") no-repeat;
+}
+
+.twitter {
+  background-position: -44px -8px;
+}
+
+.facebook {
+  background-position: -20px -8px;
+}
+
+.youtube {
+  background-position: -73px -8px;
 }
 
 .footer__tel {
@@ -495,6 +587,10 @@ h3 {
   display: flex;
   margin: 0;
   margin-bottom: 45px;
+  padding: 0;
+}
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 26px;
 }
 
 .breadcrumbs-item {
@@ -504,8 +600,22 @@ h3 {
   line-height: 21px;
 }
 
-.breadcrumbs-link {
-  margin-right: 26px;
+
+.home {
+  width: 12px;
+  height: 12px;
+  padding: 6px;
+  background: url("../images/klein-house.svg") no-repeat center;
+}
+
+.hotels::before {
+  content: "";
+  position: relative;
+  width: 6px;
+  height: 8px;
+  padding: 8px;
+  background: url("../images/arrow.svg") no-repeat center;
+  left: -11px;
 }
 
 /*-------фиьтры------*/
@@ -644,22 +754,38 @@ p strong {
 }
 
 .button-light {
-  width: 48px;
-  height: 48px;
+  width: 17px;
+  height: 15px;
   margin-right: 8px;
   margin-bottom: 8px;
-  padding: 0;
+  padding: 17px 16px;
+  border: 2px solid #E6E6E6;
   border-radius: 4px;
   background-color: white;
   color: black;
+  background: url("../images/mode-full.svg") no-repeat;
+  background-clip: content-box;
 }
+
+.mode-tile {
+  background-position: -58px -6px;
+}
+
+.mode-slideshow {
+  background-position: -31px -6px;
+}
+
+.mode-list {
+  background-position: -6px -6px;
+}
+
 .button-light:nth-child(3n) {
   margin-right: 0;
 }
 
 /*-------поиск заголовок-навигация------*/
 /*-------список------*/
-
+/*-----список грид------*/
 .product__card {
   display: grid;
   grid-template-columns: 180px 635px 160px;
@@ -683,6 +809,7 @@ p strong {
 .rating-description {
   grid-column: 3/4;
 }
+/*-----список грид------*/
 
 .product__card-wrapper {
   display: flex;
@@ -717,8 +844,17 @@ p strong {
   color: #333333;
 }
 
+.stars {
+  margin: 0;
+}
+
+.stars p {
+  margin: 0;
+}
+
 .rating {
   width: 160px;
+  margin: 0;
   padding-top: 9px;
   padding-bottom: 10px;
   background-color: #f2f2f2;
@@ -812,4 +948,34 @@ p strong {
   line-height: 24px;
   color: #333333;
 }
+
 /*-----catalog-----*/
+.stars-1 {
+  width: 18px;
+  height: 17px;
+  background: url("../images/stars-1.svg") no-repeat;
+}
+
+.stars-2 {
+  width: 43px;
+  height: 17px;
+  background: url("../images/stars-2.svg") no-repeat;
+}
+
+.stars-3 {
+  width: 68px;
+  height: 17px;
+  background: url("../images/stars-3.svg") no-repeat;
+}
+
+.stars-4 {
+  width: 93px;
+  height: 17px;
+  background: url("../images/stars-4.svg") no-repeat;
+}
+
+.stars-5 {
+  width: 118px;
+  height: 17px;
+  background: url("../images/stars-5.svg") no-repeat;
+}
