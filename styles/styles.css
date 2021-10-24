@@ -124,6 +124,11 @@ ol li {
   background-position: -98px -10px;
 }
 
+.icon {
+  display: inline-block;
+  position: relative;
+}
+
 .icon-favorites {
   width: 20px;
   height: 20px;
@@ -135,27 +140,24 @@ ol li {
 
 .icon::before {
   content: "";
-  position: relative;
+  position: absolute;
   width: 19px;
   height: 19px;
-  padding: 1px;
   background-color: #7DB54F;
   border-radius: 50%;
-  color: white;
-  top: 0px;
-  left: 0px;
+  top: 2px;
+  left: 21px;
   z-index: 1;
 }
 
 .icon::after {
   content: "12";
   position: absolute;
-  display: block;
   width: 19px;
   height: 19px;
   color: white;
-  top: 16px;
-  left: 931px;
+  top: 5px;
+  left: 25px;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
@@ -463,17 +465,21 @@ h3 {
 }
 
 .mailing__form input {
-  width: 560px;
+  width: 559px;
   height: 58px;
   border-radius: 10px 0 0 10px;
   border: none;
   margin: 0;
-  padding-left: 20px;
+  padding-left: 22px;
+  padding-right: 19px;
   background-color: #f2f2f2;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+}
+.subscription__form-inner .mailing__form input {
+  opacity: 0.6;
 }
 
 .mailing__form button {
@@ -622,9 +628,14 @@ h3 {
 /*-------фиьтры------*/
 
 .catalog__filter-title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+}
+
+.catalog__filter-item li:not(:last-child) {
+  margin-bottom: 13px;
 }
 
 .control-label {
@@ -634,6 +645,7 @@ h3 {
 }
 
 .catalog__filter-price {
+  margin-bottom: 34px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -645,6 +657,27 @@ h3 {
 
 .catalog__filter-list {
   width: 150px;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filter-wrapper {
+  display: table;
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.catalog-filter-label {
+  display: table-cell;
+  width: 140px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  padding-right: 14px;
+  border: 2px solid white;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .infrastructure {
@@ -657,11 +690,55 @@ h3 {
   margin-right: 80px;
 }
 
+.catalog-filter-input {
+  width: 76px;
+  height: 23px;
+  padding: 0;
+  padding-left: 19px;
+  background-color: transparent;
+  border: none;
+
+}
+
+.catalog-filter-input::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: white
+}
+
 /*-------фиьтры------*/
 /*-------кнопки--------*/
+.range-controls {
+  position: relative;
+}
 
-.catalog-filter-input {
-  width: 110px;
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  top: -8px;
+}
+
+.range-controls .scale {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 75%;
+  height: 4px;
+  background: #ffffff;
+}
+
+.toggle-min {
+  left: 0;
+}
+
+.toggle-max {
+  left: 75%;
 }
 
 .catalog-button .button-catalog {
@@ -684,6 +761,8 @@ h3 {
 }
 
 .catalog-button .button-reset {
+  height: 23px;
+  padding: 0;
   background-color: transparent;
   border: none;
   text-transform: none;
