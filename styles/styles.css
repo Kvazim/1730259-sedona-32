@@ -94,26 +94,21 @@ ol li {
   margin-left: 33px;
 }
 
-.nav__right-item:nth-child(-n+2) {
-  width: 18px;
-  height: 18px;
-  padding: 10px;
-}
-
 .nav__right-item:last-child {
-  margin-left: 33px;
+  margin-left: 23px;
 }
 
 .nav__left-link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 6px 12px;
   font-family: inherit;
   font-weight: 700;
   text-decoration: none;
   color: inherit;
 }
+
 .nav__right-link {
+  padding: 8px 10px 4px;
   font-family: inherit;
   font-weight: 700;
   text-decoration: none;
@@ -132,8 +127,8 @@ ol li {
   height: 19px;
   background-color: #7DB54F;
   border-radius: 50%;
-  top: 2px;
-  left: 21px;
+  top: -8px;
+  left: 22px;
   z-index: 1;
 }
 
@@ -143,8 +138,8 @@ ol li {
   width: 19px;
   height: 19px;
   color: white;
-  top: 5px;
-  left: 25px;
+  top: -5px;
+  left: 26px;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
@@ -162,9 +157,9 @@ ol li {
 .navigation-link-active::before {
   content: "";
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: -14px;
   height: 2px;
   background-color: #756257;
 }
@@ -183,7 +178,55 @@ ol li {
   text-decoration: none;
   border-radius: 4px;
 }
+/*-----состояние кнопок навигации-----*/
+.btn:hover {
+  background-color: #615048;
+}
 
+.btn:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.nav__left-item:hover {
+  color: #756257;
+}
+
+.nav__left-link:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.nav__left-link:focus {
+  color: #756257;
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
+
+.nav__right-link:hover path {
+  fill: #756257;
+}
+
+.nav__right-link:active path {
+  fill: #756257;
+  opacity: 0.3;
+}
+
+.nav__right-link:focus path {
+  fill: #756257;
+}
+
+.nav__right-link:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
+/*-----состояние кнопок навигации-----*/
 /*----navigation----*/
 
 .main-index {
@@ -471,13 +514,11 @@ h3 {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
-}
-.subscription__form-inner .mailing__form input {
   opacity: 0.6;
 }
 
 .mailing__form button {
-  width: 200px;
+  max-width: 200px;
   height: 60px;
   padding: 0;
   border-radius: 0 10px 10px 0;
@@ -500,6 +541,41 @@ h3 {
   cursor: pointer;
 }
 
+/*-----subscription__form состояния-----*/
+
+.mailing__form input:hover {
+  background-color: #e5e5e5;
+}
+
+.mailing__form input:active {
+  outline: 2px solid black;
+  opacity: 1;
+}
+
+.mailing__form input:focus {
+  background-color: #e5e5e5;
+  outline: 3px solid #83B3D3;
+}
+
+.mailing__form input:invalid {
+  outline: 2px solid #FF5757;
+}
+
+.mailing__form button:hover {
+  background-color: #68A2CA;
+}
+
+.mailing__form button:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.mailing__form button:focus {
+  background-color: #68A2CA;
+  outline: 3px solid #756257;
+}
+
+/*-----subscription__form состояния-----*/
 /*-----subscription__form-----*/
 /*-----footer__social-----*/
 
@@ -512,6 +588,7 @@ h3 {
   display: flex;
   margin: 0;
   padding: 0;
+  padding-top: 15px;
   text-decoration: none;
 }
 
@@ -519,6 +596,7 @@ h3 {
   width: 40px;
   height: 40px;
   margin-right: 10px;
+  text-align: center;
 }
 
 .footer__social-item:last-child {
@@ -529,36 +607,66 @@ h3 {
   display: block;
   height: 20px;
   padding: 10px;
-  background: url("../images/social.svg") no-repeat;
-  background-clip: content-box;
+}
+/*-----Состояния кнопок футера-----*/
+.footer__social-link:hover path {
+  fill: #68A2CA;
+}
+
+.footer__social-link:focus path {
+  fill: #68A2CA;
 }
 
 .footer__social-link:focus {
   outline: 3px solid #83B3D3;
   border-radius: 10px;
-
-}
-
-.twitter {
-  background-position: -32px -10px;
-
-}
-
-.facebook {
-  background-position: -10px -10px;
-}
-
-.youtube {
-  background-position: -63px -10px;
 }
 
 .footer__tel {
+  padding: 15px;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: black;
 }
 
+.footer__tel:hover {
+  color: #756257;
+}
+
+.footer__tel:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.footer__tel:focus {
+  color: #756257;
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
+.footer__logo {
+  padding: 19px 23px;
+}
+
+.footer__logo:hover path {
+  fill: #756257;
+}
+
+.footer__logo:active path {
+  fill: #756257;
+  opacity: 0.3;
+}
+
+.footer__logo:focus path {
+  fill: #756257;
+}
+
+.footer__logo:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+/*-----Состояния кнопок футера-----*/
 /*-----footer__social-----*/
 /*---------------index--------------------*/
 
@@ -612,11 +720,15 @@ h3 {
   line-height: 21px;
 }
 
+.breadcrumbs-item:first-child {
+  padding-top: 3px;
+}
 
 .home {
+  display: block;
   width: 12px;
   height: 12px;
-  padding: 6px;
+  padding: 6px 8px 9px;
   background: url("../images/klein-house.svg") no-repeat center;
 }
 
@@ -630,6 +742,11 @@ h3 {
   left: -11px;
 }
 
+/*-----состояния крошек-----*/
+.breadcrumbs-item:hover {
+  opacity: 0.6;
+}
+/*-----состояния крошек-----*/
 /*-------фиьтры------*/
 
 .catalog__filter-title {
@@ -729,6 +846,7 @@ h3 {
   height: 20px;
   border-radius: 5px;
   top: -8px;
+  border: none;
 }
 
 .range-controls .scale {
