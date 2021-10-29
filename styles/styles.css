@@ -563,14 +563,14 @@ background-color: #615048;
   background-color: #e5e5e5;
 }
 
-.mailing__form input:active {
-  outline: 2px solid black;
-  opacity: 1;
-}
-
 .mailing__form input:focus {
   background-color: #e5e5e5;
   outline: 3px solid #83B3D3;
+}
+
+.mailing__form input:active {
+  outline: 2px solid black;
+  opacity: 1;
 }
 
 .error {
@@ -725,15 +725,16 @@ background-color: #615048;
   margin-bottom: 45px;
   padding: 0;
 }
-.breadcrumbs-item:not(:last-child) {
-  margin-right: 26px;
-}
 
 .breadcrumbs-item {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+}
+.breadcrumbs-item:last-child {
+  padding-top: 4px;
+  padding-left: 17px;
 }
 
 .home {
@@ -745,18 +746,18 @@ background-color: #615048;
 }
 
 .hotels {
-  display: block;
-  padding: 3px 8px;
+  position: relative;
 }
 
 .hotels::before {
   content: "";
-  position: relative;
+  display: block;
+  position: absolute;
   width: 6px;
   height: 8px;
-  padding: 8px;
-  background: url("../images/arrow.svg") no-repeat left;
-  left: -11px;
+  background: url("../images/arrow.svg") no-repeat;
+  top: 7px;
+  left: -15px;
 }
 
 /*-----состояния крошек-----*/
@@ -764,14 +765,15 @@ background-color: #615048;
   opacity: 0.6;
 }
 
+.breadcrumbs-link:focus-within {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
 .breadcrumbs-link:active {
   opacity: 0.3;
 }
 
-.breadcrumbs-link:focus {
-  border: 3px solid #83B3D3;
-  border-radius: 4px;
-}
 /*-----состояния крошек-----*/
 /*-------фиьтры------*/
 
@@ -872,27 +874,27 @@ background-color: #615048;
 }
 
 .catalog-filter-wrapper {
-  display: table;
-  border-collapse: collapse;
+  display: flex;
   width: 288px;
   height: 48px;
-  border-radius: 4px;
-  overflow: hidden;
   margin-bottom: 32px;
 }
 
+.catalog-filter-label:last-child {
+  border-left: 1px solid white;
+}
+
+.catalog-filter-label:first-child {
+  border-right: 1px solid white;
+}
+
 .catalog-filter-label {
-  display: table-cell;
   width: 144px;
-  padding-left: 19px;
-  padding-right: 14px;
+  padding: 11px 14px 0 19px;
   border: 2px solid white;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.3);
   vertical-align: middle;
-  box-shadow:
-  0px 0px 0px 3px #81B3D2,
-  inset 0px 0px 0px 3px #81B3D2;
 }
 
 .infrastructure {
@@ -906,7 +908,7 @@ background-color: #615048;
 }
 
 .catalog-filter-input {
-  width: 85px;
+  width: 83px;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
