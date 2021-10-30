@@ -88,7 +88,8 @@ ol li {
   text-transform: uppercase;
 }
 
-.nav__left-item {
+.nav__left-item,
+.nav__right-item {
   position: relative;
 }
 
@@ -115,11 +116,6 @@ ol li {
   font-weight: 700;
   text-decoration: none;
   color: inherit;
-}
-
-.icon {
-  display: inline-block;
-  position: relative;
 }
 
 .icon::before {
@@ -186,10 +182,6 @@ ol li {
   background-color: #615048;
 }
 
-.nav__right-item .btn:focus {
-  outline: 3px solid #83B3D3;
-}
-
 .nav__right-item .btn:active {
   background-color: #615048;
   color: rgba(255, 255, 255, 0.3);
@@ -220,7 +212,8 @@ ol li {
 
 .nav__right-link:focus {
   outline: 3px solid #83B3D3;
-  border-radius: 10px;
+  border-radius: 4px;
+  outline-offset: inherit;
 }
 
 .nav__right-link:active path {
@@ -236,6 +229,152 @@ ol li {
   flex-grow: 1;
 }
 
+/*-----popup-----*/
+.popup {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: -180px;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.popup-activ {
+  display: block;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-wrapper {
+  flex-grow: 1;
+}
+
+.popup-list {
+  margin: 0;
+  padding: 0;
+}
+
+.popup-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 25px;
+}
+
+.card-favorites {
+  display: grid;
+  grid-template-columns: 48px auto;
+  grid-template-rows: 24px 24px;
+  column-gap: 17px;
+  text-decoration: none;
+}
+
+.card-favorites-images {
+  grid-column: 1/-1;
+  grid-row: 1/3;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.card-favorites-title {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000;
+  align-self: center;
+}
+
+.card-favorites-subtitle {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #333;
+  align-self: center;
+}
+
+.catalog-favorites-button {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  opacity: 0.2;
+}
+
+.all-favorits {
+  width: 400px;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/*-----popup состояния-----*/
+
+.card-favorites:hover {
+  opacity: 0.6;
+}
+
+.card-favorites:active {
+  opacity: 0.3;
+}
+
+.card-favorites:focus {
+  outline: 3px solid #83B3D3;
+  outline-offset: 10px;
+  border-radius: 10px;
+}
+
+.catalog-favorites-button:hover {
+  opacity: 1;
+}
+
+.catalog-favorites-button:active {
+  opacity: 0.1;
+}
+
+.catalog-favorites-button:focus {
+  opacity: 1;
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
+.all-favorits:hover {
+  background-color: #615048;
+}
+
+.all-favorits:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.all-favorits:focus {
+  background-color: #615048;
+  outline: 3px solid #83B3D3;
+  outline-offset: inherit;
+}
+
+/*-----popup состояния-----*/
+/*-----popup-----*/
 /*-----promo-----*/
 
 .promo {
@@ -459,6 +598,7 @@ h3 {
 .search__block .btn:focus {
   background-color: #615048;
   outline: 3px solid #83B3D3;
+  outline-offset: inherit;
 }
 
 .search__block .btn:active {
@@ -737,6 +877,12 @@ background-color: #615048;
   padding-left: 17px;
 }
 
+.breadcrumbs-link {
+  text-decoration: none;
+  color: white;
+
+}
+
 .home {
   display: block;
   width: 12px;
@@ -937,6 +1083,10 @@ background-color: #615048;
 /*-------фиьтры состояния------*/
 .catalog-filter-label:hover {
   border-color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-filter-label:active {
+  background-color: #756257;
 }
 
 .catalog-filter-label:focus-within {
@@ -1313,6 +1463,7 @@ p strong {
 
 .product__card-link--img:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: inherit;
 }
 
 .product__card-link--img:active {
@@ -1325,7 +1476,9 @@ p strong {
 
 .product__card-link:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: inherit;
   border-radius: 10px;
+  padding: 10px 16px 10px 15px;
 }
 .product__card-link:active {
   color: #756257;
@@ -1338,6 +1491,7 @@ p strong {
 
 .btn-details:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: inherit;
   background-color: #615048;
 }
 
@@ -1423,6 +1577,7 @@ p strong {
 
 .pagination-link:focus {
   outline: 3px solid #756257;
+  outline-offset: inherit;
 }
 
 .pagination-link:active {
@@ -1497,3 +1652,97 @@ p strong {
   height: 17px;
   background: url("../images/stars-5.svg") no-repeat;
 }
+/*-----модальное окно-----*/
+
+.modal-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  width: 715px;
+  margin: auto;
+  padding: 70px;
+  padding-top: 54px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 48px;
+  right: 71px;
+  width: 53px;
+  height: 53px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-close-button::before,
+.modal-close-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 2px;
+  top: 25px;
+  left: 21px;
+  background-color: black;
+}
+
+.modal-close-button::before {
+  transform: rotate(45deg);
+}
+
+.modal-close-button::after {
+  transform: rotate(-45deg);
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 70px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.form-label {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.field-group {
+  margin: 0;
+}
+
+.modal-form input::placeholder {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+}
+.modal-form input {
+  height: 50px;
+}
+
+.appointment-search {
+  margin-top: 40px;
+  line-height: 40px;
+}
+
+.modal-container-close {
+  display: none;
+}
+/*-----модальное окно-----*/
