@@ -613,6 +613,7 @@ h3 {
 .search__block .btn:focus {
   background-color: #615048;
   outline: 3px solid #83B3D3;
+  border-radius: 10px;
   outline-offset: inherit;
 }
 
@@ -889,7 +890,7 @@ background-color: #615048;
 }
 .breadcrumbs-item:last-child {
   padding-top: 4px;
-  padding-left: 17px;
+  padding-left: 12px;
 }
 
 .breadcrumbs-link {
@@ -902,12 +903,14 @@ background-color: #615048;
   display: block;
   width: 12px;
   height: 12px;
-  padding: 6px 8px 9px;
+  padding: 6px 8px 8px 5px;
   background: url("../images/klein-house.svg") no-repeat center;
 }
 
 .hotels {
   position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .hotels::before {
@@ -918,7 +921,7 @@ background-color: #615048;
   height: 8px;
   background: url("../images/arrow.svg") no-repeat;
   top: 7px;
-  left: -15px;
+  left: -11px;
 }
 
 /*-----состояния крошек-----*/
@@ -926,8 +929,9 @@ background-color: #615048;
   opacity: 0.6;
 }
 
-.breadcrumbs-link:focus-within {
+.breadcrumbs-link:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: 3px;
   border-radius: 4px;
 }
 
@@ -1491,9 +1495,9 @@ p strong {
 
 .product__card-link:focus {
   outline: 3px solid #83B3D3;
-  outline-offset: inherit;
+  outline-offset: 10px;
   border-radius: 10px;
-  padding: 10px 16px 10px 15px;
+  padding: 0 5px;
 }
 .product__card-link:active {
   color: #756257;
@@ -1677,6 +1681,7 @@ p strong {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  z-index: 5;
 }
 
 .modal {
@@ -1722,6 +1727,20 @@ p strong {
   transform: rotate(-45deg);
 }
 
+.modal-close-button:hover {
+  background-color: #e5e5e5;
+}
+
+.modal-close-button:focus {
+  background-color: #e5e5e5;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #e5e5e5;
+  opacity: 0.3;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 70px;
@@ -1731,15 +1750,56 @@ p strong {
   text-transform: uppercase;
 }
 
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.appointment-date-arrival,
+.appointment-date-departure {
+  width: 420px;
+  height: 50px;
+  padding-left: 19px;
+  padding-right: 19px;
+  border: none;
+  border-radius: 4px;
+  background: url("../images/calendar.svg") no-repeat right 19px center;
+  background-color: #f2f2f2;
+  opacity: 0.6;
+}
+
+.appointment-date-arrival:hover,
+.appointment-date-departure:hover {
+  background-color: #E5E5E5;
+}
+
+.appointment-date-arrival:focus,
+.appointment-date-departure:focus {
+  background-color: #E5E5E5;
+  outline: 3px solid #83B3D3;
+}
+
+.appointment-date-arrival:active,
+.appointment-date-departure:active {
+  opacity: 1;
+  outline: 2px solid #000;
+  background-color: white;
+}
+
 .form-label {
   margin: 0;
+  padding-top: 5px;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
 }
 
 .field-group {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
+  margin-bottom: 11px;
 }
 
 .modal-form input::placeholder {
@@ -1747,14 +1807,205 @@ p strong {
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
+  color: #000;
 }
+
 .modal-form input {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000;
+}
+
+.input-message {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #333;
+}
+
+.input-message-error {
+  color: #FF5757;
+}
+
+.human {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-label-adult {
+  margin-right: 175px;
+}
+
+.appointment-human {
+  display: block;
+  width: 133px;
   height: 50px;
+  margin-bottom: 0;
+  border: none;
+  background-color: #f2f2f2;
+  text-align: center;
+  appearance: none;
+}
+
+.input-controls-wrapper {
+  position: relative;
+}
+
+.input-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+
+.input-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.decrease::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.increase::before,
+.increase::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.increase::before {
+  transform: rotate(90deg);
+}
+
+.decrease:hover:before,
+.increase:hover:before,
+.increase:hover:after {
+  background-color: #000;
+}
+
+.decrease:focus:before,
+.increase:focus:before,
+.increase:focus:after {
+  background-color: #000;
+}
+
+.input-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.input-button:active {
+  opacity: 0.2;
+}
+
+.appointment-human:focus {
+  outline: 3px solid #83B3D3;
 }
 
 .appointment-search {
+  width: 100%;
   margin-top: 40px;
   line-height: 40px;
+  border-radius: 10px;
+}
+
+.appointment-search:hover {
+  background-color: #68A2CA;
+}
+
+.appointment-search:focus {
+  background-color: #68A2CA;
+  outline: 3px solid #756257;
+}
+
+.appointment-search:active {
+  background-color: #68A2CA;
+  opacity: 0.3;
+}
+
+.dop-info {
+  width: 25px;
+  height: 25px;
+  margin-top: 15px;
+  margin-right: 18px;
+  margin-left: 11px;
+  border: none;
+  color: white;
+  background-color: #83B3D3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dop-info:hover {
+  background-color: #68A2CA;
+}
+
+.dop-info:focus {
+  background-color: #68A2CA;
+  outline: 3px solid #756257;
+}
+
+.children-info {
+  position: relative;
+}
+
+.prompt {
+  display: none;
+  position: absolute;
+  width: 256px;
+  top: 60px;
+  right: -108px;
+  padding: 15px 18px 18px 22px;
+  box-sizing: border-box;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.prompt::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 9px;
+  top: -3px;
+  right: 50%;
+  transform: translateX(-50%) rotate(226deg);
+  background: url("../images/arrow-children.png") no-repeat;
+}
+
+.children-text {
+  margin: 0;
+  color: white;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.prompt-open {
+  display: block;
 }
 
 .modal-container-close {
