@@ -118,7 +118,20 @@ ol li {
   color: inherit;
 }
 
-.icon::before {
+.favorites-total {
+  position: absolute;
+  top: -5px;
+  left: 26px;
+  width: 19px;
+  height: 19px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: white;
+  z-index: 2;
+}
+
+.icon::after {
   content: "";
   position: absolute;
   width: 19px;
@@ -128,20 +141,6 @@ ol li {
   top: -8px;
   left: 22px;
   z-index: 1;
-}
-
-.icon::after {
-  content: "12";
-  position: absolute;
-  width: 19px;
-  height: 19px;
-  color: white;
-  top: -5px;
-  left: 26px;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 13px;
-  z-index: 2;
 }
 
 .nav__left,
@@ -233,13 +232,28 @@ ol li {
 .popup {
   display: none;
   position: absolute;
-  top: 45px;
-  left: -180px;
-  z-index: 1;
+  top: 41px;
+  left: 50%;
+  transform: translateX(-50%);
   box-sizing: border-box;
   width: 400px;
   background-color: white;
   border-radius: 20px;
+  z-index: 1;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
+}
+
+.popup::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 9px;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../images/arrow-modal.png") no-repeat;
 }
 
 .popup-activ {
@@ -287,6 +301,7 @@ ol li {
   grid-column: 2;
   grid-row: 1;
   margin: 0;
+  text-transform: capitalize;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
