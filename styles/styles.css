@@ -51,7 +51,7 @@ body {
 .main__nav {
   display: flex;
   height: 65px;
-  margin: 0 72px;
+  margin: 0 70px;
 }
 
 .nav__logo {
@@ -101,9 +101,12 @@ ol li {
   margin-left: 23px;
 }
 
+.nav__right-item:first-child {
+  margin-right: 1px;
+}
+
 .nav__left-link {
   display: block;
-  padding: 6px 12px;
   font-family: inherit;
   font-weight: 700;
   text-decoration: none;
@@ -111,16 +114,29 @@ ol li {
 }
 
 .nav__right-link {
-  padding: 7px 10px 4px;
+  display: inline-block;
   font-family: inherit;
   font-weight: 700;
   text-decoration: none;
   color: inherit;
 }
 
+.icon-favorites,
+.icon-search {
+  display: block;
+  width: 18px;
+  height: 18px;
+  padding-top: 6px;
+}
+
+.search-link,
+.icon {
+padding: 7px 10px;
+}
+
 .favorites-total {
   position: absolute;
-  top: -5px;
+  top: 5px;
   left: 26px;
   width: 19px;
   height: 19px;
@@ -138,7 +154,7 @@ ol li {
   height: 19px;
   background-color: #7DB54F;
   border-radius: 50%;
-  top: -8px;
+  top: 2px;
   left: 22px;
   z-index: 1;
 }
@@ -154,16 +170,17 @@ ol li {
 .navigation-link-active::before {
   content: "";
   position: absolute;
-  left: 10px;
-  right: 10px;
-  bottom: -14px;
+  left: 0px;
+  right: -3px;
+  bottom: -21px;
   height: 2px;
   background-color: #756257;
 }
 
 .btn {
   width: 160px;
-  padding: 10px 35px;
+  padding-top: 9px;
+  padding-bottom: 10px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -398,8 +415,8 @@ ol li {
 
 .promo__text {
   width: 720px;
-  min-height: 282px;
   margin: 0 auto;
+  padding-top: 41px;
 }
 
 .promo-logo {
@@ -418,7 +435,7 @@ ol li {
   background-size: 100% auto;
 }
 
-.promo__title {
+.promo__title strong {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -426,6 +443,8 @@ ol li {
 }
 
 .promo__subtitle {
+  padding-top: 13px;
+  padding-bottom: 56px;
   font-weight: 400;
   font-size: 22px;
   line-height: 36px;
@@ -475,23 +494,23 @@ h3 {
 
 .advantage__item-promo .card__text {
   width: 220px;
-  padding: 98px 90px 77px;
+  padding: 97px 90px 77px;
   text-align: center;
 }
 
 .advantage__list:first-of-type .advantage__item:not(:first-child) .card__text {
   width: 250px;
-  padding: 184px 75px 89px;
+  padding: 186px 75px 90px;
   text-align: center;
 }
 
 .advantage__list:first-of-type .advantage__item:not(:first-child) .card__text p {
-  margin-top: 20px;
+  margin-top: 17px;
 }
 
 .advantage__list:last-of-type .advantage__item:not(:first-child) .card__text {
   width: 250px;
-  padding: 98px 75px 115px;
+  padding: 99px 75px 108px;
   text-align: center;
 }
 
@@ -508,8 +527,8 @@ h3 {
   height: 72px;
   position: absolute;
   background: url("../images/hous.svg") no-repeat;
-  top: -90px;
-  left: 55px;
+  top: -98px;
+  left: 53px;
 }
 
 .food::before {
@@ -519,8 +538,8 @@ h3 {
   height: 72px;
   position: absolute;
   background: url("../images/buter.svg") no-repeat;
-  top: -90px;
-  left: 55px;
+  top: -95px;
+  left: 53px;
 }
 
 .souvenir::before {
@@ -530,8 +549,8 @@ h3 {
   height: 76px;
   position: absolute;
   background: url("../images/present.svg") no-repeat;
-  top: -90px;
-  left: 55px;
+  top: -101px;
+  left: 58px;
 }
 
 .lodging {
@@ -541,7 +560,7 @@ h3 {
 
 .card__text p {
   margin: 0;
-  margin-top: 26px;
+  margin-top: 29px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -551,6 +570,7 @@ h3 {
   display: block;
   width: 800px;
   height: 384px;
+  object-fit: contain;
 }
 
 .advantage__list {
@@ -572,8 +592,8 @@ h3 {
 .search__block {
   width: 720px;
   margin: 0 auto;
-  padding-top: 90px;
-  padding-bottom: 110px;
+  padding-top: 88px;
+  padding-bottom: 91px;
   text-align: center;
 }
 
@@ -586,7 +606,7 @@ h3 {
 
 .search__block-subtitle {
   padding-top: 30px;
-  padding-bottom: 63px;
+  padding-bottom: 58px;
   color: #333333;
 }
 
@@ -599,7 +619,10 @@ h3 {
 }
 
 .search__block .btn {
-  padding: 15px 150px 19px 150px;
+  display: inline-block;
+  width: 575px;
+  padding-top: 13px;
+  padding-bottom: 12px;
   border-radius: 10px;
   font-weight: 700;
   font-size: 20px;
@@ -642,8 +665,8 @@ background-color: #615048;
 .subscription__title {
   width: 720px;
   margin: 0 auto;
-  padding-top: 94px;
-  padding-bottom: 29px;
+  padding-top: 92px;
+  padding-bottom: 30px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -663,7 +686,7 @@ background-color: #615048;
   width: 800px;
   height: 60px;
   margin: 0 auto;
-  padding-bottom: 94px;
+  padding-bottom: 95px;
   justify-content: center;
 }
 
@@ -686,11 +709,11 @@ background-color: #615048;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .mailing__form button {
-  max-width: 200px;
+  width: 200px;
   height: 60px;
   padding: 0;
   border-radius: 0 10px 10px 0;
@@ -753,21 +776,20 @@ background-color: #615048;
 
 .footer__social {
   display: flex;
-  justify-content: space-between;
-  margin: 40px 72px 40px;
+  margin: 22px 49px 24px 61px;
 }
 .footer__social-list {
   display: flex;
   margin: 0;
+  margin-right: 231px;
   padding: 0;
-  padding-top: 15px;
+  padding-top: 22px;
   text-decoration: none;
 }
 
 .footer__social-item {
   width: 40px;
-  height: 40px;
-  margin-right: 10px;
+  margin-right: 4px;
   text-align: center;
 }
 
@@ -776,10 +798,29 @@ background-color: #615048;
 }
 
 .footer__social-link {
-  display: block;
-  height: 20px;
-  padding: 10px;
+  display: inline-block;
 }
+
+.social-icon {
+  display: block;
+}
+
+.twitter {
+  padding: 8px 6px;
+}
+
+.facebook {
+  padding: 6px 10px;
+}
+
+.youtube {
+  padding: 7px 5px;
+}
+
+.footer__logo-icon {
+  display: block;
+}
+
 /*-----Состояния кнопок футера-----*/
 .footer__social-link:hover path {
   fill: #68A2CA;
@@ -791,6 +832,7 @@ background-color: #615048;
 
 .footer__social-link:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: 5px;
   border-radius: 10px;
 }
 
@@ -818,6 +860,7 @@ background-color: #615048;
 }
 
 .footer__logo {
+  margin-left: auto;
   padding: 19px 23px;
 }
 
@@ -1090,6 +1133,10 @@ background-color: #615048;
   margin: 0;
 }
 
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
 .catalog-filter-input::placeholder {
   font-family: inherit;
   font-weight: 400;
@@ -1209,17 +1256,17 @@ background-color: #615048;
 /*-------кнопки--------*/
 /*-------кнопки состояния--------*/
 .range-toggle:hover {
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0,25);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
   outline: 2px solid #83B3D3;
-  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0,4);
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.4);
 }
 
 .range-toggle:focus {
   outline: 3px solid #83B3D3;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0,25);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .button-catalog:hover {
@@ -1741,6 +1788,17 @@ p strong {
   opacity: 0.3;
 }
 
+.appointment-form-date {
+  display: grid;
+  grid-template-columns: 295px 420px;
+  grid-template-rows: 50px 40px;
+}
+
+.label-form {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 70px;
@@ -1750,16 +1808,15 @@ p strong {
   text-transform: uppercase;
 }
 
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.input-message {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .appointment-date-arrival,
 .appointment-date-departure {
-  width: 420px;
-  height: 50px;
+  grid-column: 2/3;
+  grid-row: 1/2;
   padding-left: 19px;
   padding-right: 19px;
   border: none;
@@ -1795,13 +1852,6 @@ p strong {
   line-height: 40px;
 }
 
-.field-group {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  margin-bottom: 11px;
-}
-
 .modal-form input::placeholder {
   font-family: inherit;
   font-weight: 700;
@@ -1833,11 +1883,18 @@ p strong {
 
 .human {
   display: flex;
-  justify-content: space-between;
+}
+
+.human p {
+  margin: 0;
 }
 
 .form-label-adult {
-  margin-right: 175px;
+  margin-right: 214px;
+}
+
+.input-children {
+  margin-left: auto;
 }
 
 .appointment-human {
@@ -1849,6 +1906,14 @@ p strong {
   background-color: #f2f2f2;
   text-align: center;
   appearance: none;
+}
+
+.appointment-form-human {
+  padding-top: 5px;
+}
+
+.form-label-children {
+  margin-left: 56px;
 }
 
 .input-controls-wrapper {
@@ -1913,6 +1978,7 @@ p strong {
 
 .input-button:focus {
   outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .input-button:active {
@@ -1921,6 +1987,7 @@ p strong {
 
 .appointment-human:focus {
   outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .appointment-search {
