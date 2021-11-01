@@ -911,17 +911,16 @@ background-color: #615048;
 
 .inner__header-title {
   margin: 0;
-  padding-top: 35px;
-  padding-bottom: 5px;
+  padding-top: 32px;
   font-weight: 700;
   font-size: 60px;
-  line-height: 78px;
+  line-height: 77px;
 }
 
 .breadcrumbs {
   display: flex;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
   padding: 0;
 }
 
@@ -932,7 +931,7 @@ background-color: #615048;
   line-height: 21px;
 }
 .breadcrumbs-item:last-child {
-  padding-top: 4px;
+  margin-left: 9px;
   padding-left: 12px;
 }
 
@@ -946,14 +945,14 @@ background-color: #615048;
   display: block;
   width: 12px;
   height: 12px;
-  padding: 6px 8px 8px 5px;
+  padding-top: 3px;
+  padding-left: 1px;
   background: url("../images/klein-house.svg") no-repeat center;
 }
 
 .hotels {
   position: relative;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 6px;
 }
 
 .hotels::before {
@@ -963,8 +962,8 @@ background-color: #615048;
   width: 6px;
   height: 8px;
   background: url("../images/arrow.svg") no-repeat;
-  top: 7px;
-  left: -11px;
+  top: 6px;
+  left: -9px;
 }
 
 /*-----состояния крошек-----*/
@@ -990,7 +989,8 @@ background-color: #615048;
 }
 
 .catalog__filter-title {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+  padding: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -1002,7 +1002,7 @@ background-color: #615048;
 }
 
 .catalog__filter-item li:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 }
 
 .control {
@@ -1030,7 +1030,7 @@ background-color: #615048;
   width: 13px;
   height: 10px;
   background: url("../images/halya.svg") no-repeat;
-  top: 6px;
+  top: 5px;
   left: 4px;
 }
 
@@ -1069,7 +1069,7 @@ background-color: #615048;
 }
 
 .catalog__filter-price {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -1085,7 +1085,7 @@ background-color: #615048;
   display: flex;
   width: 288px;
   height: 48px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .catalog-filter-label:last-child {
@@ -1097,8 +1097,8 @@ background-color: #615048;
 }
 
 .catalog-filter-label {
-  width: 144px;
-  padding: 11px 14px 0 19px;
+  width: 143px;
+  padding: 10px 0 0 16px;
   border: 2px solid white;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.3);
@@ -1106,17 +1106,18 @@ background-color: #615048;
 }
 
 .infrastructure {
-  margin-right: 70px;
+  margin: 0;
+  margin-right: 65px;
 }
 
 .search__price {
   width: 290px;
   margin-left: auto;
-  margin-right: 80px;
+  margin-right: 78px;
 }
 
 .catalog-filter-input {
-  width: 83px;
+  width: 86px;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -1192,16 +1193,16 @@ input[type=number] {
 
 .toggle-max {
   bottom: -8px;
-  left: 227px;
+  left: 216px;
 }
 
 .catalog-button .button-catalog {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   height: 48px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   color: white;
@@ -1211,7 +1212,7 @@ input[type=number] {
 .catalog-button {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 61px;
 }
 
 .catalog-button .button-reset {
@@ -1221,6 +1222,9 @@ input[type=number] {
   margin: auto;
   background-color: transparent;
   border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
   text-transform: none;
 }
 
@@ -1303,8 +1307,8 @@ input[type=number] {
 
 .search-header {
   display: flex;
-  margin-top: 44px;
-  margin-bottom: 42px;
+  margin-top: 43px;
+  margin-bottom: 30px;
 }
 
 .search__title-header {
@@ -1330,23 +1334,23 @@ p strong {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
-  line-height: 39px;
+  line-height: 38px;
 }
 
 .select-control {
   width: 100%;
-  padding: 10px 19px;
+  padding: 10px 17px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   background-color: white;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 23px;
   color: #333333;
   appearance: none;
   background: url("../images/select-arrow.svg") no-repeat;
-  background-position: right 21px center;
+  background-position: right 18px center;
   outline: none;
 }
 
@@ -1362,9 +1366,9 @@ p strong {
 .button-light {
   width: 17px;
   height: 15px;
-  margin-right: 8px;
+  margin-right: 7px;
   margin-bottom: 8px;
-  padding: 17px 16px;
+  padding: 16px 16px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   background-color: white;
@@ -1684,7 +1688,7 @@ p strong {
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 23px;
   color: #333333;
 }
 
