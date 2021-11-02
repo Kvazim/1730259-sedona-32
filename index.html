@@ -291,43 +291,43 @@
             <span class="input-message">На эти даты есть свободные номера. Пока есть.</span>
           </p>
           <div class="human">
-            <p class="field-group appointment-form-human">
+            <div class="field-group appointment-form-human">
               <label class="form-label form-label-adult" for="appointment-human-adult">Взрослые:</label>
-            <div class="input-controls-wrapper input-adult">
-              <div class="input-controls">
-                <button class="input-button decrease" type="button">
-                  <span class="visually-hidden">Уменьшить на 1</span>
-                </button>
-                <button class="input-button increase" type="button">
-                  <span class="visually-hidden">Увеличить на 1</span>
-                </button>
+              <div class="input-controls-wrapper input-adult">
+                <div class="input-controls">
+                  <button class="input-button decrease" type="button">
+                    <span class="visually-hidden">Уменьшить на 1</span>
+                  </button>
+                  <button class="input-button increase" type="button">
+                    <span class="visually-hidden">Увеличить на 1</span>
+                  </button>
+                </div>
+                <input type="number" class="appointment-human input-adult" id="appointment-human-adult"
+                  name="appointment-human-adult" placeholder="2" min="0">
               </div>
-              <input type="number" class="appointment-human input-adult" id="appointment-human-adult"
-                name="appointment-human-adult" placeholder="2" min="0">
             </div>
-            </p>
-            <p class="field-group appointment-form-human">
+            <div class="field-group appointment-form-human">
               <label class="form-label form-label-children" for="appointment-human-children">Дети:</label>
-            <div class="children-info">
-              <button class="dop-info" type="button">i</button>
-              <div class="prompt">
-                <p class="children-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
-                  лет. Дети до 6 лет размещаются бесплатно.</p>
+              <div class="children-info">
+                <button class="dop-info" type="button">i</button>
+                <div class="prompt">
+                  <p class="children-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</p>
+                </div>
+              </div>
+              <div class="input-controls-wrapper input-children">
+                <div class="input-controls">
+                  <button class="input-button decrease" type="button">
+                    <span class="visually-hidden">Уменьшить на 1</span>
+                  </button>
+                  <button class="input-button increase" type="button">
+                    <span class="visually-hidden">Увеличить на 1</span>
+                  </button>
+                </div>
+                <input type="number" class="appointment-human appointment-human-children"
+                  id="appointment-human-children" name="appointment-human-adult" placeholder="1" min="0">
               </div>
             </div>
-            <div class="input-controls-wrapper input-children">
-              <div class="input-controls">
-                <button class="input-button decrease" type="button">
-                  <span class="visually-hidden">Уменьшить на 1</span>
-                </button>
-                <button class="input-button increase" type="button">
-                  <span class="visually-hidden">Увеличить на 1</span>
-                </button>
-              </div>
-              <input type="number" class="appointment-human" id="appointment-human-children"
-                name="appointment-human-adult" placeholder="1" min="0">
-            </div>
-            </p>
           </div>
           <button class="button appointment-search" type="submit">Записаться</button>
         </form>
