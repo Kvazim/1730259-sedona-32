@@ -145,16 +145,16 @@
                 <div class="range">
                   <div class="catalog-filter-wrapper">
                     <label class="catalog-filter-label">
-                      <input class="catalog-filter-input" type="number" name="min-price" min="0" step="1"
-                        placeholder="0">от
+                      <input class="catalog-filter-input catalog-filter-min" type="number" name="min-price" min="0"
+                        step="1" placeholder="0">от
                     </label>
                     <label class="catalog-filter-label">
-                      <input class="catalog-filter-input" type="number" name="max-price" min="0" step="1"
-                        placeholder="9000">до
+                      <input class="catalog-filter-input catalog-filter-max" type="number" name="max-price" min="0"
+                        step="1" placeholder="9000">до
                     </label>
                   </div>
                   <div class="range-scale">
-                    <div class="range-bar" style="left: 0; width: 216px;">
+                    <div class="range-bar" style="left: 0; width: 236px;">
                       <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
@@ -185,7 +185,7 @@
               <div class="select">
                 <label class="visually-hidden" for="sorting">Сортировка</label>
                 <select class="select-control" id="sorting" name="sorting">
-                  <option value="popular">Сначала дешёвое</option>
+                  <option value="popular">Сначала дешёвые</option>
                   <option value="cheap">Сначала популярное</option>
                   <option value="expensive">Сначала дорогое</option>
                 </select>
