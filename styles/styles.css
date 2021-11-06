@@ -117,7 +117,7 @@ body {
 .nav-site-link {
   display: block;
   padding: 4px 9px 3px;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: inherit;
@@ -125,7 +125,7 @@ body {
 
 .nav-user-link {
   display: inline-block;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: inherit;
@@ -185,7 +185,7 @@ body {
   width: 160px;
   padding-top: 8px;
   padding-bottom: 9px;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
@@ -337,7 +337,7 @@ body {
   grid-row: 1;
   margin: 0;
   text-transform: capitalize;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
@@ -349,7 +349,7 @@ body {
   grid-column: 2;
   grid-row: 2;
   margin: 0;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
@@ -729,7 +729,7 @@ body {
   padding-left: 22px;
   padding-right: 19px;
   background-color: #f2f2f2;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -749,7 +749,7 @@ body {
   padding-bottom: 10px;
   border: none;
   border-radius: 4px;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -950,7 +950,7 @@ body {
 }
 
 .breadcrumbs-item {
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1149,7 +1149,7 @@ body {
 
 .catalog-filter-input {
   width: 86px;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -1174,7 +1174,7 @@ input[type="number"] {
 }
 
 .catalog-filter-input::placeholder {
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -1234,7 +1234,7 @@ input[type="number"] {
 .catalog-button .button-catalog {
   margin-bottom: 14px;
   height: 48px;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1265,14 +1265,14 @@ input[type="number"] {
 
 .button-favorites {
   margin: 0;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
 }
 
 .button-favorites-added {
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -1380,7 +1380,7 @@ p strong {
   border: 2px solid #e6e6e6;
   border-radius: 4px;
   background-color: #ffffff;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -1845,7 +1845,7 @@ p strong {
   grid-column: 2/3;
   grid-row: 2/3;
   margin: 0;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
@@ -1896,7 +1896,7 @@ p strong {
 }
 
 .modal-form input::placeholder {
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
@@ -1904,7 +1904,7 @@ p strong {
 }
 
 .modal-form input {
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
@@ -2100,7 +2100,7 @@ p strong {
 .children-text {
   margin: 0;
   color: #ffffff;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
