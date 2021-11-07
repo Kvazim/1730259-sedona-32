@@ -367,6 +367,8 @@ body {
 
 .all-favorits {
   width: 400px;
+  margin-left: -1px;
+  margin-bottom: -1px;
   padding: 0;
   padding-top: 20px;
   padding-bottom: 20px;
